@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
         <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(240, 162, 220)" , margin: "3%", marginLeft: "10%", marginTop: "2%" }}}>
           <div className = "Icons">
-          <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)" , margin: "3%", marginLeft: "40%" }}}>
+          <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)" , margin: "3%", marginLeft: "33%" }}}>
             <a href = "https://www.linkedin.com/in/muskaan30/"><FaLinkedin /></a>
             </IconContext.Provider>
           <a href = "https://github.com/MuskaanSharma30" ><FaGithub /></a>
