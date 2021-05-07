@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  /* margin-left: 20px; */
+  /* background-color: aqua; */
+  position: fixed;
+  top: 0;
+  height: 100%;
+  text-decoration: none;
+}
+.Nav ul div
+{
+  margin-top: 30px;
+  list-style: none;
+  color : rgb(228, 139, 205);
+  font-family: 'Encode Sans Condensed', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+}
+.Nav a 
+{
+  text-decoration: none;
+}
+body
+{
+/* background-color: rgba(59, 55, 55, 0.938); */
+background: linear-gradient(to left, rgb(195, 20, 50), rgb(36, 11, 54));
+}
+.Heading
+{
+  color: rgb(219, 107, 189);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+  text-align: center;
+  font-family: 'Marck Script', cursive; 
+  /* font-family: 'Allura', cursive; */
+  font-size: 32px;
+  margin-left: 3%;
+
+}
+.Heading1
+{
+  font-family: 'Varela Round', sans-serif;
+  color: aliceblue;
+  font-size: 40px;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  color : pink;
+}
+.About
+{
+  color: aliceblue;
+}
+.content
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.myimg {
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+   position: relative;
+   margin-top: 10%;
+   margin-left: 30%;
+   border: 5px solid  rgb(36, 11, 54);
+}
+.project-name {
   color: white;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+.project-name div {
+   
+  border: 20px solid rgb(235, 187, 232);
+  color: rgb(235, 187, 232);
+  border-width: 5px;
+  
+  /* margin-bottom:20%; */
+  margin:3%;
+  height:200px;
+  width: 200px;
+  border-radius: 100px;
+}
+.Nav ul div::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  display: block;
+  border-bottom: 4px solid rgb(195, 20, 50);
+  border-radius: 100px;
+  transition: all .35s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.Nav ul div:hover::after{ 
+width: 50%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Heading1::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40%;
+ 
+  border-bottom: 4px solid rgb(240, 162, 220);
+  border-radius: 100px;
+  transition: all .35s ease-in-out;
+}
+.pics {
+  height:200px;
+  width:200px;
+  border-radius : 95px;
+}
+.Space {
+  margin: 10%;
+}
+.Contact-full{
+
+  background: rgb(36, 11, 54);
+
+}
+.Contact-head {
+  color: rgb(184, 63, 83);
+  font-size : 32px;
+  text-align: center;
+  margin-top: 10%;
+  padding-top: 5%;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+.Contact {
+  color : rgb(240, 162, 220);
+  font-size : 32px;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+/* .Icons {
+  margin-top: 5%;
+} */
+.Email {
+  font-size: 24px;
+  
+}
+.My-email {
+  color: rgb(195, 20, 50);
+}
+.About-head {
+  display : flex;
+  justify-content: space-around;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  margin-bottom: 5%;
+  align-items: center;
+  font-size: 40px;
+  color : pink;
+  font-weight: 700;
+}
+.About-content {
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size: 32px;
+  
+  font-weight: 700;
+}
+.Designer {
+  color:#a75377;
+  background-color: rgb(36, 11, 54);
+  padding: 3% 11%;
+  margin-top: 3%;
+  text-align: center;
+  border-radius: 50px;
+  margin-left: 7%;
+}
+.Designer-content {
+  font-size: 24px;
+  color: #b55c6c;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 15%;
+}
+.Designer-content-2 {
+  color: #e77c7c;
+  padding-top: 7%;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+.Developer {
+  color:#a75377;
+  background-color: rgb(36, 11, 54);
+  padding: 3% 8%;
+  margin-top: 3%;
+  text-align: center;
+  border-radius: 50px;
 }
