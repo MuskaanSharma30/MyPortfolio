@@ -27,7 +27,8 @@ const Home = () => {
                 
             </div>
             
-            <div className = "image"><img src = {Pimage} alt= "pic" className= "myimg"/></div>
+            <div className = "image" data-aos="fade-down-right"   data-aos-duration="2000"
+     data-aos-offset="500"><img src = {Pimage} alt= "pic" className= "myimg"/></div>
         <div>
         
             <span className = "Heading" data-aos="flip-left"

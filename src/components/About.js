@@ -9,7 +9,8 @@ const About = () => {
             <div className = "About-content">
             <div className = "Designer" data-aos="flip-right"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="3005"
+     data-aos-duration="2000"
+     data-aos-offset="500"
      >
              <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)",marginRight : "10%" }}}>
              <FaPencilRuler />
@@ -35,7 +36,8 @@ const About = () => {
             </div>
             <div className = "Developer"data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+     data-aos-duration="2000"
+     data-aos-offset="500">
             <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)",marginRight : "10%" }}}>
             <FaDesktop />
             </IconContext.Provider>Front-end Developer
