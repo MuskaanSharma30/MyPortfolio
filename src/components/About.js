@@ -7,9 +7,12 @@ const About = () => {
         <div>
             <div className = "About-head" id = "about">About Me</div>
             <div className = "About-content">
-            <div className = "Designer">
-            <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)",marginRight : "10%" }}}>
-           <FaPencilRuler />
+            <div className = "Designer" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="3000"
+     >
+             <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)",marginRight : "10%" }}}>
+             <FaPencilRuler />
             </IconContext.Provider>
                    Designer
                <div className = "Designer-content">
@@ -30,7 +33,9 @@ const About = () => {
                     </endl>
                 </div>
             </div>
-            <div className = "Developer">
+            <div className = "Developer"data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <IconContext.Provider value={{ style: {fontSize: '30px', color : "rgb(228, 139, 205)",marginRight : "10%" }}}>
             <FaDesktop />
             </IconContext.Provider>Front-end Developer
