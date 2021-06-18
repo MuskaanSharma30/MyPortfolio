@@ -14,7 +14,10 @@ const Home = () => {
 
         <div id = "home">
            
-            <div className = "Nav">
+            <div className = "Nav" data-aos="zoom-in-left"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2000">
                 <ul>
                     <a href = "#home"><div>Home</div></a>
                     <a href = "#about"><div>About Me</div></a>
@@ -27,13 +30,15 @@ const Home = () => {
             <div className = "image"><img src = {Pimage} alt= "pic" className= "myimg"/></div>
         <div>
         
-            <span className = "Heading">
+            <span className = "Heading" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             
                 Hello!
                 <br/>
                 My name is Muskaan Sharma
                 <br/>
-                and I am a Web Developer hailing from Kanpur.
+                A Web Developer hailing from Kanpur.
             </span>
         </div>
         </div>
